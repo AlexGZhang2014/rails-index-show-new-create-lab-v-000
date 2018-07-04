@@ -1,4 +1,4 @@
 class Coupon < ActiveRecord::Base
   def display
-    self.coupon_code + " "
+    self.store + ": " + self.coupon_code
 end
